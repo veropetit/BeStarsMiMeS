@@ -44,7 +44,7 @@ Gregg did this locally on his machine.
 The output files are in the `Synth-local-spectra` folder of the Shared Google Drive. 
 
 
-## 3. Compute the disk-integrated spectra
+## 3. Compute the disk-integrated spectra (with rotational broadening)
 
 For each observed star, we compute a disk-integrated spectrum using Oleg’s `s3div` incorporating the star’s observed vsini (GAW: Be_2019/WORKING/*dsk). 
 
@@ -71,5 +71,24 @@ Therefore, the Synth executables (downloaded 2022-07-09) are in the folder `Synt
 
 The output files (one per star in the sample) are in `Synth-diskint-spectra` folder of the Shared Drive. 
 
+## 4. Radvel shift and noise
+
+The next step is the apply a radial velocity correction (for each observation) and add statistical noise. The colab notebook `03-Synth-calculations.ipynb` does this in Part 2. 
+
+The procedure is as follow: 
+
+1. Read in the original spectrum for an observation
+2. Read in the rotationally broadened model spectrum that has been convolved with the instrument resolution by `s3div` already. WARNING: check the R value for the HARPS observation and modify the code accordingly?
+3. Shift the model by the appropriate radial velocity for that observation (`VradCorrected` in the spreadsheet).
+4. Split the observation into its orders (so this is assuming that the spectrum's orders have not been merged. If using a code that merges the order, then there should be an option to do this procedure in one swoop, instead of order by order. 
+5. For each order, do the folloowing:
+	* a. Interpolate the shifted model spectrum to the wavelength grid of the observed spectrum
+	* b. Add some random noise to the interpolated model, using the observed error column as the sigma of the normal distribution.
+	* c. Replace the observation.specI with the model (but keep all the other columns the same -- this way there is no need to stitch together the LSD profiles after the fact.
+6. Splice the orders back together and save the resulting hybrid spectra in .s format.
+
+The resulting hybrid spectra are located in the folder `Synth-hybrid-spectra` folder in the Shared Google Drive. 
+
+Now, various masks (including Asif's cleaned masks) can be used directly on these spectra, to directly get hybrid LSD profiles. 
 
  
