@@ -2,14 +2,21 @@
 
 ## Input tables
 
-NAME OF GOOGLE SPREADSHEET HERE
+The GoogleSpreadsheet in the SharedDrive > BeStars Notebooks > [00-InputInformation](https://docs.google.com/spreadsheets/d/1M6y1Wnsrc-w5FjUMfKaSFa_-foIDAaMe8W4lYNWnWyk/edit?usp=sharing) has the following sheets:
 
-* List of all the stars in the sample
-* List of all the unique synthetic model used. 
 
-NAME OF GOOGLE COLAB FILE
+* `Stars` List of all the stars in the sample with star-dependant information (e.g. vsini, Teff, etc)
+* `Observations` List of all the observation in the sample, with observation-dependant information (e.g. filename, vrad, etc) 
+* `ListOfModels` List of all the unique synthetic model used. 
 
-* Demonstrates how to read in these lists into Panda. 
+
+
+The Colab Notebook [00-InputInformation](https://github.com/veropetit/BeStarsMiMeS/blob/master/00-InputInformation.ipynb) has some demonstration of
+* how we mount the Shared Drive to Colab, 
+* how we clone e.g. the [specpolflow](https://github.com/folsomcp/specpolFlow) python tools to use in the notebook
+* how we load the 00-Information spreadsheet into a Panda Dataframe and various ways to manipulate Pandata dataframes. 
+
+> NOTE: the notebook could use a bit of cleaning. 
 
 
 ## Gathering the data from the MiMeS server. 
