@@ -16,7 +16,7 @@ The line lists are in the `VALD-ShortList-AtmModels` folder of the Shared Google
 
 ## 2. Compute the local synthetic spectra
 
-For each unique model (see the `List of unique models` in the 00-NeededInformation), using `Synth3` to compute the local synthetic spectra at various angles. 
+For each unique model (see the `List of unique models` in the [00-InputInformation](https://docs.google.com/spreadsheets/d/1M6y1Wnsrc-w5FjUMfKaSFa_-foIDAaMe8W4lYNWnWyk/edit?usp=sharing) spreadsheet), using `Synth3` to compute the local synthetic spectra at various angles. 
 
 The executable code and user manual for `Synth3` can be found here:
 [https://www.astro.uu.se/~oleg/synth3.html](https://www.astro.uu.se/~oleg/synth3.html)
@@ -48,7 +48,7 @@ The output files are in the `Synth-local-spectra` folder of the Shared Google Dr
 
 For each observed star, we compute a disk-integrated spectrum using Oleg’s `s3div` incorporating the star’s observed vsini (GAW: Be_2019/WORKING/*dsk). 
 
-The vsini used are listed in the `00-Information` spreadsheet. 
+The vsini used are listed in the [00-InputInformation](https://docs.google.com/spreadsheets/d/1M6y1Wnsrc-w5FjUMfKaSFa_-foIDAaMe8W4lYNWnWyk/edit?usp=sharing)  spreadsheet. 
 
 > TODO: check!! At this moment I can’t recall where the vsini came from. For the 2012 study it was from fitting the observed, cleaned LSD profiles. 
  
@@ -65,15 +65,13 @@ s3div  T15000G40.mout hd6226_1.dsk 120.00 2.0 167000 65000
 
 As it turns out, Google Colab notebooks are able to run command line executable that lives on a mounted Google Drive (!!!!)
 
-Therefore, the Synth executables (downloaded 2022-07-09) are in the folder `Synth-codes`. The colab notebook `03-Synth-calculations.ipynb` runs `s3div.Linux` in a loop over the stars, using the information in the spreadsheet. 
-
-> I've only made the demo with a single star -- ask the undergrads to code up the necessary loop.
+Therefore, the Synth executables (downloaded 2022-07-09) are in the folder `Synth-codes`. The colab notebook [02-Synth calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Synth_calculations.ipynb) runs `s3div.Linux` in a loop over the stars in Part 1, using the information in the spreadsheet. 
 
 The output files (one per star in the sample) are in `Synth-diskint-spectra` folder of the Shared Drive. 
 
 ## 4. Radvel shift and noise
 
-The next step is the apply a radial velocity correction (for each observation) and add statistical noise. The colab notebook `03-Synth-calculations.ipynb` does this in Part 2. 
+The next step is the apply a radial velocity correction (for each observation) and add statistical noise. The colab notebook [02-Synth_calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Synth_calculations.ipynb) does this in Part 2. 
 
 The procedure is as follow: 
 
