@@ -26,10 +26,14 @@ This is done in the python notebook (Part X), and the values used for each star 
 We calculate different sets of LSD profiles, with different combination of spectra (observed/hybrid) and mask (full/asif). The LSD profiles are saved in the `LSD` folder noted in the table below. The file format is `[star]_[obs].lsd`.
 
 
-| spectra | mask    | name of LSD folder |
+| spectra folder | mask folder   | name of LSD folder |
 | ------- | ------- | ------------------ |
-| Synth-hybrid-spectra | depth0.1_tellClean | hybrid\_maskdepth0.1\_tellClean |
-| NormalizedSpectra | depth0.1_tellClean |normalized\_maskdepth0.1\_tellClean |
-| Synth-hybrid-spectra | MaskCleanedAsif | hybrid\_maskdepth0.1\_CleanAsif |
-| NormalizedSpectra | MaskCleanedAsif | normalized\_maskedepth0.1\_CleanAsif |
+| Synth-hybrid-spectra | depth0.1_tellClean | hybrid\_\_maskdepth0.1\_tellClean |
+| NormalizedSpectra | depth0.1_tellClean |normalized\_\_maskdepth0.1\_tellClean |
+| Synth-hybrid-spectra | depth0.02_tellClean | hybrid\_\_maskdepth0.1\_tellClean |
+| NormalizedSpectra | depth0.02_tellClean |normalized\_\_maskdepth0.1\_tellClean |
+| Synth-hybrid-spectra | MaskCleanedAsif | hybrid\_\_CleanAsif+tellClean |
+| NormalizedSpectra | MaskCleanedAsif | normalized\_\_CleanAsif+tellClean |
+
+There are PDF files (named after the directory in the last column above) in the `LSD` directory that corresponds to each set of LSD profiles.
 
