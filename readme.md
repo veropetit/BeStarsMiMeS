@@ -1,3 +1,32 @@
+## The team
+
+UD students doing most of the work:
+
+* Marisol Catalan Olais
+* Robin Moore
+* Dax Moraes
+* Patrick Stanley
+* Federico Villadiego Forero
+
+Under the supervision of
+
+* Véronique Petit
+
+Collaboration from:
+
+* Colin Folsom
+* Mary Oksala
+* Gregg Wade
+
+Work commissioned by:
+
+* Coralie Neiner et al. 
+
+We are making use of tools provided by:
+
+* specpolflow and LSDpy by Colin Folsom et al. (link here)
+* Synth3 by Oleg Kochokhov (link here)
+
 ## The premise of this project
 
 - The incidence of magnetism in massive stars is ~10%.
