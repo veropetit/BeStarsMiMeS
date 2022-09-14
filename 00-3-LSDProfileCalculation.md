@@ -16,7 +16,7 @@ We make use of the python [LSDpy](https://github.com/folsomcp/LSDpy). The option
 
 We set the range of the LSD profile calculation and the pixel size for each star as follows:
 
-* The range is 5 times the listed vsini, plus the maximal value of the listed vrad for the observations if max(vrad) + vsini > 5*vsini. 
+* The range is 3 times the listed vsini, plus the maximal value of the listed vrad for the observations if max(vrad) + vsini > 3*vsini. 
 * The pixel size is set to 20 points per vsini, with a minimum pixel size of 2.6. 
 
 > NOTE: this last point could be changed for observations that have only HARPS data? What's the pixel size in mks for HARPS?
