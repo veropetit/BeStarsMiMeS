@@ -34,9 +34,9 @@ In the [Report for BeStarMiMeS notebook 3](https://docs.google.com/presentation/
 	
 ## A note on binarity:
 
-One of the star (INSERT HD NUMBER HERE) really looks like a double-lined spectroscopic binary. 
+One of the star (HD 35411) really looks like a double-lined spectroscopic binary. 
 
-> Insert information here, or link to a report/notebook ?
+The notebook [Binaries]() has both the line profile and TESS light curves of this star.
 	
 See also below for binarity indication in the TESS lightcurves. 
 	
@@ -51,4 +51,17 @@ The Google Slides NAME provides a key and typical profiles images.
 
 
 ## Using the TESS LC to check for potential binaries and to check the Be status of the target. 
+
+The Colab Notebook [TESS Observations]() makes a PDF called [TESS Observations](). The pdf plots the light curves, periodogram, and zoomed periodogram for each TESS observation with a cadence of 2 minutes or less. 
+
+By observing TESS observations of our Be stars, we can identify obvious binaries or otherwise strange stars. There are 2 obvious eclipsing binaries in our sample, HD 35411 and HD 76838, which can be identified by their characteristic periodic flux dips at regular intervals. 
+
+Additionally there are a few other less obvious binaries that are flagged due to regular periodic dips or sinusoidal variation. Some of these stars may just be pulsators rather than binaries which is why looking at the Halpha spectra might help indentify if it is a binary,
+
+Finally there is one star that is an obvious non-Be star due to three observed stellar flares that typically occur on low mass stars.
+
+The binarity of these systems can sometimes also be seen in the Halpha line, which is especially useful for the non-obvious binaries. See the A note on binarity section above.
+
+
+
 
