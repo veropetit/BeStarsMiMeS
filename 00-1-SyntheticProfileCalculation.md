@@ -89,4 +89,6 @@ The resulting hybrid spectra are located in the folder `Synth-hybrid-spectra` fo
 
 Now, various masks (including Asif's cleaned masks) can be used directly on these spectra, to directly get hybrid LSD profiles. 
 
- 
+
+---- 
+<a href="#00-1-SyntheticProfileCalculation.md">Next Page</a>
