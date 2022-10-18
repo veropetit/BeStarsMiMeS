@@ -99,3 +99,6 @@ for i,o in enumerate(obs):
     os.system('cp -P /home/auddoula/BeWork/{}/{} norm_spectra/{}_{}.s'.format(s,link,s,i+1))
 out.close()
 ```
+
+---
+<a href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-1-SyntheticProfileCalculation.md">Next Page</a>
