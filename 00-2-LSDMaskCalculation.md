@@ -1,3 +1,9 @@
+
+
+Previous page: <a href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-2-LSDMaskCalculation.md">00-2-LSDMaskCalculation.md</a>
+
+---
+
 # LSD mask calculations
 
 
@@ -61,7 +67,8 @@ But just in case, we passed the mask through the same process described in #3 ab
 
 These mask as located in the folder `Masks/Asif_tellClean/` 
  
-
+---
+Next page: <a href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-2-LSDMaskCalculation.md">00-2-LSDMaskCalculation.md</a>
 
 
 

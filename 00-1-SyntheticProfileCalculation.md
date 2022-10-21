@@ -1,3 +1,6 @@
+
+Previous page: <a href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-0-InputInformation.md">00-0-InputInformation.md</a>
+
 # Synthetic spectra calculations
 
 
@@ -48,7 +51,7 @@ The output files are in the `00-InputMaterial/Synth-local-spectra` folder of the
 
 On the Shared Google Drive, this is done in the 01-Synth-calculation folder. 
 
-For each observed star, we compute a disk-integrated spectrum using Oleg’s `s3div` incorporating the star’s observed vsini (GAW: Be_2019/WORKING/*dsk). 
+For each observed star, we compute a disk-integrated spectrum using Oleg’s `s3div` incorporating the star’s observed vsini. 
 
 The vsini used are listed in the [00-InputInformation](https://docs.google.com/spreadsheets/d/1M6y1Wnsrc-w5FjUMfKaSFa_-foIDAaMe8W4lYNWnWyk/edit?usp=sharing) spreadsheet. 
 
@@ -93,4 +96,4 @@ Now, various masks (including Asif's cleaned masks) can be used directly on thes
 
 
 ---- 
-<a href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-2-LSDMaskCalculation.md">Next Page</a>
+Next page: <a href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-2-LSDMaskCalculation.md">00-2-LSDMaskCalculation.md</a>
