@@ -19,7 +19,7 @@ We obtained long-format line list using the extract stellar form in VALD, using 
 * Microturbulence: 2
 * Line list configuration: Default. 
 
-The line list, renamed in a longlist_TXXXXXgXX format are located in the `VALD-LongList` folder in the Shared Google drive
+The line list, renamed in a longlist_TXXXXXgXX format are located in the `00-InputMaterial/VALD-LongList` folder in the Shared Google drive
 
 ## 2. Converting the line lists into masks. 
 
@@ -29,27 +29,33 @@ We used the `make_mask` tool provided by the [specpolflow](https://github.com/fo
 * atomsOnly=True
 * By default, the H 1 lines are not included. 
 
-The initial masks are in the folder `Masks`, in a subfolder named after the depth parameter, with a filename format `T-----g--_depth___.mask` (e.g. `T20000g40_depth0.02.mask`).
+The initial masks are in the folder `02-MaskCalculations/VALDlist2Mask`, in a subfolder named after the depth parameter, with a filename format `T-----g--_depth___.mask` (e.g. `T20000g40_depth0.02.mask`).
 
-This is done by Part 1 of Colab notebook [01-Loop\_over\_individual\_models](https://github.com/veropetit/BeStarsMiMeS/blob/master/01-Loop_over_individual_models.ipynb)
+This is done Colab notebook [02-VALDlist2Mask]()FIX LINK!
 
-## 3. Removing regions of telluric contamination from the mask
+## 3. Removing regions of telluric and H-wing contamination from the mask
 
-The `make_mask` does not take into acount the regions in the spectrum that are contaminated by telluric lines (unlike Donati's LSD code?). 
+The `make_mask` does not remove lines in the regions in the spectrum that are contaminated by telluric lines (unlike Donati's LSD code?). 
 
-We therefore identified such regions visually in Colab notebook [04-Telluric\_contamination.ipynb](https://github.com/veropetit/BeStarsMiMeS/blob/master/04-Telluric_contamination.ipynb). 
+We therefore identified such regions visually in an ESPaDOnS spectrum. 
 
-In the notebook, there is a sample ESPaDOnS spectrum, with the wavelength ranges excluded from the masks shaded in grey. 
+The wavelenght ranges are recoded in the GoogleSpreadsheet [02-ContaminatedregionsWL]()FIX LINK.
 
-The wavelenght ranges are recoded in the GoogleSpreadsheet [04-ContaminatedregionsWL](https://docs.google.com/spreadsheets/d/19lS0Xg-2ZUs0ps8jZ-JM3pR1YIuC_lWvRMpFAM5VUYI/edit?usp=sharing).
+Additionally, we exclude regions 1000 km/s aroung the Balmer series, as well as regions aroung the Balmer gap for which the normalization is difficult (especialy when using the synthetic spectra -- the continnum is drepressed)
 
-We then create a new set of mask in which we remove the lines that falls in these regions (by setting the `isused` column in the mask object to zero). 
+The notebook [02-ContaminatedRegionsVisualization]()FIX LINK provides a visualization of the removed regions. To change the star to be displayed, just change the name and obervation number. 
 
-This is done in Part 2 of Colab Notebook [01-Loop\_over\_individual\_models](https://github.com/veropetit/BeStarsMiMeS/blob/master/01-Loop_over_individual_models.ipynb).
 
-The resulting masks are located on the Shared Drive in the folder `Masks/depth----_tellClean` with the same naming convention as the initial masks (`T-----g--_depth0.1.mask`). 
+With this list of regions to exclude, we create a new set of mask in which we remove the lines that falls in these regions (by setting the `isused` column in the mask object to zero). 
+
+This is done in Colab Notebook [02-MaskCleaning]()FIX LINK.
+
+The resulting masks are located on the Shared Drive in the folder `02-Mask-calculations/MaskCleaning/depth----_tellClean` with the same naming convention as the initial masks (`T-----g--_depth0.1.mask`). 
 
 ## 4. Masks tailored by Asif
+
+> TODO this needs to be updated
+
 
 Asif has tailored some masks to specifically match the observations, keeping only lines that are clearly seen and in absorption ***(is this accurate?)***.
 
