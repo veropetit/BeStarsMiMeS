@@ -14,12 +14,15 @@ In the main Shared Drive, there is a Google Slides document called [Report on th
 1. We have identifed by eye the best 5 stars that have 'well-behaved' spectra (no emission, visible and symmetric spectral lines. 
 
 	> For later, the typical example will be HD 189687 
-	<img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/NormalizedSpectra_CII_dataonly-HD189687.png" style="height: 100px"/>
+	>
+	><img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/NormalizedSpectra_CII_dataonly-HD189687.png" style="height: 500px"/>
 
 2. We have identified by eye the best 5 stars that have obvious Be-like spectra (lots of emission all over the place, not too noisy). 
 
 	> For later, the typical example will be HD 148184 (double peak emission)
-	Insert image here
+	>
+	><img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/NormalizedSpectra_CII_dataonly-HD148184.png" style="height: 500px"/>
+
 
 3. We have also identified stars for which the vsini we have listed seems to be wrong. 
 
@@ -48,17 +51,18 @@ See also below for binarity indication in the TESS lightcurves.
 	
 ## The status of the Be disk during the observations. 
 
-In UPDATE NOTEBOOK NAME AND LOCATION, we make graphs of the Halpha line profiles of each stars, overplotted with our synthetic model. The PDF is called [HydrogenAlphaSpectralLine.pdf]()FIX LINK. 
+In UPDATE NOTEBOOK NAME AND LOCATION, we make graphs of the Halpha line profiles of each stars, overplotted with our synthetic model. The PDF is called [HydrogenAlphaSpectralLine.pdf](https://drive.google.com/file/d/1-R4aPO_D18BwZV-Od_E1YU0JuNaYgOvJ/view?usp=share_link). 
 
 The type of emission for each star is noted in the 00-Information spreadsheet, in the column `Halpha shape`. 
 The Google Slides (HalphaCharacterization)[https://docs.google.com/presentation/d/1wyPI9kbeioUcQsewTiVvA9LkyhTY_sCioh58Gt9i2cQ/edit?usp=sharing] provides a key and typical profiles images. 
 
 **NOTE**: It seems that HD 164284 has observations with and without the disk present -- good target to test the hybrid method with. 
 
+<img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/HydrogenAlphaSpectralLine-HD164284" style="height: 500px"/>
 
 ## Using the TESS LC to check for potential binaries and to check the Be status of the target. 
 
-The Colab Notebook [TESS Observations]() makes a PDF called [TESS observations.pdf](). The pdf plots the light curves, periodogram, and zoomed periodogram for each TESS observation with a cadence of 2 minutes or less. 
+The Colab Notebook [TESS Observations]()FIX LINK makes a PDF called [TESS observations.pdf](https://drive.google.com/file/d/12xSyInSpHGMBI4hGfU8uQ88Zz_H2lqXc/view?usp=share_link). The pdf plots the light curves, periodogram, and zoomed periodogram for each TESS observation with a cadence of 2 minutes or less. 
 
 By observing TESS observations of our Be stars, we can identify obvious binaries or otherwise strange stars. There are 2 obvious eclipsing binaries in our sample, HD 35411 and HD 76838, which can be identified by their characteristic periodic flux dips at regular intervals. 
 
