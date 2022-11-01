@@ -13,11 +13,13 @@ In the main Shared Drive, there is a Google Slides document called [Report on th
 
 1. We have identifed by eye the best 5 stars that have 'well-behaved' spectra (no emission, visible and symmetric spectral lines. 
 
-	> For later, the typical example will be HD 189687
+	> For later, the typical example will be HD 189687 
+	<img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/NormalizedSpectra_CII_dataonly-HD189687.png" style="height: 100px"/>
 
 2. We have identified by eye the best 5 stars that have obvious Be-like spectra (lots of emission all over the place, not too noisy). 
 
 	> For later, the typical example will be HD 148184 (double peak emission)
+	Insert image here
 
 3. We have also identified stars for which the vsini we have listed seems to be wrong. 
 
