@@ -58,7 +58,7 @@ The Google Slides (HalphaCharacterization)[https://docs.google.com/presentation/
 
 **NOTE**: It seems that HD 164284 has observations with and without the disk present -- good target to test the hybrid method with. 
 
-<img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/HydrogenAlphaSpectralLine-HD164284" style="height: 500px"/>
+<img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/HydrogenAlphaSpectralLine-HD164284.png" style="height: 500px"/>
 
 ## Using the TESS LC to check for potential binaries and to check the Be status of the target. 
 
