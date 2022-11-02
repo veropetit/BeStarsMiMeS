@@ -72,6 +72,6 @@ Finally there is one star that is an obvious non-Be star due to three observed s
 
 The binarity of these systems can sometimes also be seen in the Halpha line, which is especially useful for the non-obvious binaries. See the A note on binarity section above.
 
-
+> @Patrick: wanna add something here about the comparison between our list of Be and Jonathan's Be star TESS paper? Your results and notes are in a separate spreadsheet, right?
 
 

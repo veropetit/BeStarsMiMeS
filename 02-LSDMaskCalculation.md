@@ -54,7 +54,7 @@ The resulting masks are located on the Shared Drive in the folder `02-Mask-calcu
 
 ## 4. Masks tailored by Asif
 
-> TODO this needs to be updated
+> TODO: this needs to be updated
 
 
 Asif has tailored some masks to specifically match the observations, keeping only lines that are clearly seen and in absorption ***(is this accurate?)***.
