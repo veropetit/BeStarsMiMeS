@@ -101,4 +101,4 @@ out.close()
 ```
 
 ---
-(Next: 00-1-SyntheticProfileCalculation.md )[https://github.com/veropetit/BeStarsMiMeS/blob/master/00-1-SyntheticProfileCalculation.md]
+Next: [00-1-SyntheticProfileCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/00-1-SyntheticProfileCalculation.md)

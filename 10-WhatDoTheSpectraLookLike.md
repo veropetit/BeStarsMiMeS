@@ -76,4 +76,4 @@ The binarity of these systems can sometimes also be seen in the Halpha line, whi
 
 
 ---
-Next page: (10-WhatDoTheSpectraLookLike.md)[https://github.com/veropetit/BeStarsMiMeS/blob/master/10-WhatDoTheSpectraLookLike.md]
+Next page: [10-WhatDoTheSpectraLookLike.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/10-WhatDoTheSpectraLookLike.md)

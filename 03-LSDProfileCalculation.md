@@ -1,6 +1,6 @@
 # LSD profile calculations
 
-Previous page: (02-LSDMaskCalculation.md)[https://github.com/veropetit/BeStarsMiMeS/blob/master/02-LSDMaskCalculation.md]
+Previous page: [02-LSDMaskCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-LSDMaskCalculation.md)
 
 The LSD profiles are calculated in Colab notebook [03-LSD-calculations/03-LSD_profiles]()FIX LINK
 

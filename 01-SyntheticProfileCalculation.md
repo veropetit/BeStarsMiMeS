@@ -1,5 +1,5 @@
 
-Previous page: (00-InputInformtion.md)[href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-InputInformation.md]
+Previous page: [00-InputInformtion.md](href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-InputInformation.md)
 
 # Synthetic spectra calculations
 
@@ -96,4 +96,4 @@ Now, various masks (including Asif's cleaned masks) can be used directly on thes
 
 
 ---- 
-Next page: (02-LSDMaskCalculation.md)[https://github.com/veropetit/BeStarsMiMeS/blob/master/02-LSDMaskCalculation.md]
+Next page: [02-LSDMaskCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-LSDMaskCalculation.md)
