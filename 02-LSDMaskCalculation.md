@@ -1,6 +1,6 @@
 
 
-Previous page: (01-SyntheticProfileCalculation.md)[https://github.com/veropetit/BeStarsMiMeS/blob/master/01-SyntheticProfileCalculation.md]
+Previous page: [01-SyntheticProfileCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/01-SyntheticProfileCalculation.md)
 
 ---
 
@@ -75,6 +75,6 @@ We filtered the mask to set the last column to 0 in these cases.
 These mask as located in the folder `Masks/Asif_tellClean/` 
  
 ---
-Next page: (03-LSDProfileCalculation.md)[https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md]
+Next page: [03-LSDProfileCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md)
 
 
