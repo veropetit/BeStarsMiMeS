@@ -1,5 +1,5 @@
 
-Previous page: [00-InputInformtion.md](href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-InputInformation.md)
+Previous page: [00-InputInformtion.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/00-InputInformation.md)
 
 # Synthetic spectra calculations
 
