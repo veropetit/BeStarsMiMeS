@@ -1,8 +1,13 @@
 # Mask Comparison
 
+Previous: [10-WhatDoTheSpectraLookLike.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/10-WhatDoTheSpectraLookLike.md)
+
 In the folder 11-MaskComparison, there is a Colab notebook that can, in Part 1, read select one specific observation and create a comparison of the available masks. At the end of Part1, there is also a cell to output a few rows of the mask files, for a direct numerical comparison. 
 
 In Part 2, the notebook creates a histrogram of number of lines per depth, for a comparison between the mask we are using with the hybrid method and the mask Cleaned and Cleaned/Tweaked by Asif and Coralie. For the latter, we don't count the lines for which the depth has been set to zero. 
+
+In Part 3, the notebook creates a multi-page PDF with all of the histograms, that is located in ADD LOCATION
+> TODO: fix paths and run again. 
 
 ## Findings
 
@@ -17,3 +22,5 @@ As expected, the masks that have been cleaned for 'well-behaved' stars have a si
 But for stars with a lot of emission in the spectrum, the number of lines is greater in our mask, also as expected. 
 
 <img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/MaskHisto-HD148184.png" style="height: 500px"/>
+
+Next: [12-LSDProfileComparison.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/12-LSDProfileComparison.md)

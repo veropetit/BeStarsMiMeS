@@ -1,6 +1,6 @@
 
 
-Previous page: <a href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-2-LSDMaskCalculation.md">00-2-LSDMaskCalculation.md</a>
+Previous page: (01-SyntheticProfileCalculation.md)[https://github.com/veropetit/BeStarsMiMeS/blob/master/01-SyntheticProfileCalculation.md]
 
 ---
 
@@ -52,29 +52,29 @@ This is done in Colab Notebook [02-MaskCleaning]()FIX LINK.
 
 The resulting masks are located on the Shared Drive in the folder `02-Mask-calculations/MaskCleaning/depth----_tellClean` with the same naming convention as the initial masks (`T-----g--_depth0.1.mask`). 
 
-## 4. Masks tailored by Asif
-
-> TODO: this needs to be updated
+## 4. Masks tailored by Asif and Coralie
 
 
-Asif has tailored some masks to specifically match the observations, keeping only lines that are clearly seen and in absorption ***(is this accurate?)***.
+Asif and Coralie have also tailored some masks to specifically match the observations, keeping only lines that are clearly seen and in absorption ***(is this accurate?)***.
 
-These masks are located in the Shared Drive in the folder `MaskCleanedAsif`  with a name format `[star]_clean_[obs].mask_auto_twk`. Note that there are one mask *per observations*, unlike the masks above which are not tailored to individual observations of a given star. 
+There are two sets of masks: 'cleaned' and 'cleaned and tweaked' (see [11-MaskComparison](https://github.com/veropetit/BeStarsMiMeS/blob/master/11-MaskComparison.md) for more information).
+These masks are located in the Shared Drive in the folder `00-InputMaterial/AsifMaskClean` and `00-InputMaterial/AsifMaskCleanTweak`  with a name format `[star]_clean_[obs].mask` and `[star]_clean_[obs].mask_auto_twk`. Note that there are one mask *per observations*, unlike the masks above which are not tailored to individual observations of a given star. 
 
-We note here that the depth of some lines that are used in the mask (the last column of the file mask has a "1" in it) have a depth set to zero (probably coming from the 'tweaking' process?). 
-> We do not use these lines when computing line statistics. 
 
 ## 5. Removing lines in telluric regions in the Masks tailored by Asif. 
+
 
 We kinda assume that the lines in the telluric regions were remove by Asif in the tailoring process
 > Check this with them
 
 But just in case, we passed the mask through the same process described in #3 above. 
 
+Furthermore, we noted that the depth of some lines that are used in the mask (the last column of the file mask has a "1" in it) have a depth set to zero (probably coming from the 'tweaking' process?). 
+We filtered the mask to set the last column to 0 in these cases. 
+
 These mask as located in the folder `Masks/Asif_tellClean/` 
  
 ---
-Next page: <a href="https://github.com/veropetit/BeStarsMiMeS/blob/master/00-2-LSDMaskCalculation.md">00-2-LSDMaskCalculation.md</a>
-
+Next page: (03-LSDProfileCalculation.md)[https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md]
 
 

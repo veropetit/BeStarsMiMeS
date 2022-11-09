@@ -75,3 +75,5 @@ The binarity of these systems can sometimes also be seen in the Halpha line, whi
 > @Patrick: wanna add something here about the comparison between our list of Be and Jonathan's Be star TESS paper? Your results and notes are in a separate spreadsheet, right?
 
 
+---
+Next page: (10-WhatDoTheSpectraLookLike.md)[https://github.com/veropetit/BeStarsMiMeS/blob/master/10-WhatDoTheSpectraLookLike.md]
