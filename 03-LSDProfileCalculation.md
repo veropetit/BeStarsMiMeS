@@ -29,12 +29,14 @@ We calculate different sets of LSD profiles, with different combination of spect
 
 | spectra folder | mask folder   | name of LSD folder |
 | ------- | ------- | ------------------ |
-| Synth-hybrid-spectra | depth0.1_tellClean | hybrid\_\_maskdepth0.1\_tellClean |
-| NormalizedSpectra | depth0.1_tellClean |normalized\_\_maskdepth0.1\_tellClean |
-| Synth-hybrid-spectra | depth0.02_tellClean | hybrid\_\_maskdepth0.1\_tellClean |
-| NormalizedSpectra | depth0.02_tellClean |normalized\_\_maskdepth0.1\_tellClean |
-| Synth-hybrid-spectra | MaskCleanedAsif | hybrid\_\_CleanAsif+tellClean |
-| NormalizedSpectra | MaskCleanedAsif | normalized\_\_CleanAsif+tellClean |
+| Synth-hybrid-spectra | depth0.1_tellClean | hybrid\_maskdepth0.1\_tellClean |
+| NormalizedSpectra | depth0.1_tellClean |normalized\_maskdepth0.1\_tellClean |
+| Synth-hybrid-spectra | depth0.02_tellClean | hybrid\_maskdepth0.02\_tellClean |
+| NormalizedSpectra | depth0.02_tellClean |normalized\_maskdepth0.02\_tellClean |
+| Synth-hybrid-spectra | MaskCleanedAsif | hybrid\_CleanAsif+tellClean |
+| NormalizedSpectra | MaskCleanedAsif | normalized\_CleanAsif+tellClean |
+| Synth-hybrid-spectra | MaskCleanedAsifTweak | hybrid\_CleanAsifTweak+tellClean |
+| NormalizedSpectra | MaskCleanedAsifTweak | normalized\_CleanAsifTweak+tellClean |
 
 There are PDF files (named after the directory in the last column above) in the `LSD` directory that corresponds to each set of LSD profiles.
 
