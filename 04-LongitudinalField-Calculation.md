@@ -8,8 +8,9 @@ We make use of [specpolFlow](https://github.com/folsomcp/specpolFlow) and its Bz
 * norm = auto
 * lambda0 = 500nm
 * geff = 1.2
-* bzwidth = None
+* bzwidth = $\pm$ vsini
+* velrange = $\pm$ 1.5 vsini
 
-The velocity range was set between $ \pm $ vsini of the star. The code was then ran for every star and for the various models described in [03-LSDProfileCalculation](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md)
+The code was then ran for every star and for the various models described in [03-LSDProfileCalculation](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md)
  
 
