@@ -50,3 +50,5 @@ We are making use of tools provided by:
 The ourpose of this repository is to gather all of the method and codes that are necessary to reproduce our results. 
 
 The initial data and produced data are available on a Shared Google drive (to facilitate the use of Google Collaboratory). 
+
+Start here:  [00-InputMaterial.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/00-InputMaterial.md)
