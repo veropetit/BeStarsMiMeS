@@ -11,7 +11,7 @@ We make use of [specpolFlow](https://github.com/folsomcp/specpolFlow) and its Bz
 * lambda0 = 500nm
 * geff = 1.2
 * bzwidth = $\pm$ vsini
-* velrange = vrad $\pm$ 1.5vsini)
+* velrange = vrad $\pm$ 1.5vsini
 
 The code was then ran for every star and for the various models described in [03-LSDProfileCalculation](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md)
  
