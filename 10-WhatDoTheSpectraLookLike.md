@@ -1,5 +1,7 @@
 # A first look at the data
 
+Previous page: [04-LongitudinalFieldCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/04-LongitudinalFieldCalculation.md)
+
 In the folder `10-Spectra-Data-vs-hybrid-plots and Halpha and TESS`, there are a few notebooks that creates the figures used in the analysis below. 
 
 ## Look at the spectra and check the accuracy of vsini

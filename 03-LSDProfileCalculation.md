@@ -40,3 +40,4 @@ We calculate different sets of LSD profiles, with different combination of spect
 
 There are PDF files (named after the directory in the last column above) in the `LSD` directory that corresponds to each set of LSD profiles.
 
+Next page: [04-LongitudinalFieldCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/04-LongitudinalFieldCalculation.md)
