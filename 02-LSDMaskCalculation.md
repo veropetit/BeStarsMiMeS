@@ -31,7 +31,7 @@ We used the `make_mask` tool provided by the [specpolflow](https://github.com/fo
 
 The initial masks are in the folder `02-MaskCalculations/VALDlist2Mask`, in a subfolder named after the depth parameter, with a filename format `T-----g--_depth___.mask` (e.g. `T20000g40_depth0.02.mask`).
 
-This is done Colab notebook [02-VALDlist2Mask]()FIX LINK!
+This is done notebook [02-VALDlist2Mask](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Mask-calculations/02-VALDlist2mask.ipynb)
 
 ## 3. Removing regions of telluric and H-wing contamination from the mask
 
@@ -39,16 +39,16 @@ The `make_mask` does not remove lines in the regions in the spectrum that are co
 
 We therefore identified such regions visually in an ESPaDOnS spectrum. 
 
-The wavelenght ranges are recoded in the GoogleSpreadsheet [02-ContaminatedregionsWL]()FIX LINK.
+The wavelength ranges are recoded in the GoogleSpreadsheet [02-ContaminatedregionsWL](https://docs.google.com/spreadsheets/d/19lS0Xg-2ZUs0ps8jZ-JM3pR1YIuC_lWvRMpFAM5VUYI/edit#gid=0)
 
-Additionally, we exclude regions 1000 km/s aroung the Balmer series, as well as regions aroung the Balmer gap for which the normalization is difficult (especialy when using the synthetic spectra -- the continnum is drepressed)
+Additionally, we exclude regions 1000 km/s aroung the Balmer series, as well as regions aroung the Balmer gap for which the normalization is difficult (especialy when using the synthetic spectra -- the continnum is drepressed). We also check the vsini width that will be used when making the LSD profiles, if there would be overlap with the Balmer series we extended the exclusion regions accordingly.
 
-The notebook [02-ContaminatedRegionsVisualization]()FIX LINK provides a visualization of the removed regions. To change the star to be displayed, just change the name and obervation number. 
+The notebook [02-ContaminatedRegionsVisualization](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Mask-calculations/02-ContaminatedRegionsVisualization.ipynb) provides a visualization of the removed regions. To change the star to be displayed, just change the name and obervation number. 
 
 
 With this list of regions to exclude, we create a new set of mask in which we remove the lines that falls in these regions (by setting the `isused` column in the mask object to zero). 
 
-This is done in Colab Notebook [02-MaskCleaning]()FIX LINK.
+This is done in Colab Notebook [02-MaskCleaning](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Mask-calculations/02-MaskCleaning.ipynb).
 
 The resulting masks are located on the Shared Drive in the folder `02-Mask-calculations/MaskCleaning/depth----_tellClean` with the same naming convention as the initial masks (`T-----g--_depth0.1.mask`). 
 
@@ -72,7 +72,7 @@ But just in case, we passed the mask through the same process described in #3 ab
 Furthermore, we noted that the depth of some lines that are used in the mask (the last column of the file mask has a "1" in it) have a depth set to zero (probably coming from the 'tweaking' process?). 
 We filtered the mask to set the last column to 0 in these cases. 
 
-These mask as located in the folder `Masks/Asif_tellClean/` 
+These mask as located in the folder `02-Mask-calculations/MaskCleaning/AsifMaskClean_tellClean/` and `02-Mask-calculations/MaskCleaning/AsifMaskCleanTweak_tellClean/` 
  
 ---
 Next page: [03-LSDProfileCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md)

@@ -42,20 +42,19 @@ For each models, the following commands calculated the local intensity and creat
 synth3.Darwin_Intel ap00k2_T-----G--.lst  T-----G--.mout
 ```
 
-Gregg did this locally on his machine. 
+Gregg did this locally on his machine.
 
 The output files are in the `00-InputMaterial/Synth-local-spectra` folder of the Shared Google Drive. 
 
 
 ## 3. Compute the disk-integrated spectra (with rotational broadening)
 
-On the Shared Google Drive, this is done in the 01-Synth-calculation folder. 
+This is done in the 01-Synth-calculation folder. 
 
 For each observed star, we compute a disk-integrated spectrum using Oleg’s `s3div` incorporating the star’s observed vsini. 
 
-The vsini used are listed in the [00-InputInformation](https://docs.google.com/spreadsheets/d/1M6y1Wnsrc-w5FjUMfKaSFa_-foIDAaMe8W4lYNWnWyk/edit?usp=sharing) spreadsheet. 
+The vsini used are listed in the [00-InputInformation](https://docs.google.com/spreadsheets/d/1M6y1Wnsrc-w5FjUMfKaSFa_-foIDAaMe8W4lYNWnWyk/edit?usp=sharing) spreadsheet, and were originally obtained from the 2012 study where it was from fitting the observed, cleaned LSD profiles. The final vsini values used are in the `vsini-estimate` column where Patrick visually fit a model to the He I 402.6nm line. Some of the spectra were too bad to estimate a vsini by eye (denoted with a `very bad`), in which case the code defaults to the `Adopted-vsini` column with original values.
 
-> TODO: check!! At this moment I can’t recall where the vsini came from. For the 2012 study it was from fitting the observed, cleaned LSD profiles. 
  
 The executable code and manual for `s3div` are the same as for `Synth3` (see above). 
 
@@ -68,21 +67,24 @@ s3di <input file> <output file> [ <v sin i> <vmacro> <Resol> <Instrum> ]
 s3div  T15000G40.mout hd6226_1.dsk 120.00 2.0 167000 65000
 ```
 
-As it turns out, Google Colab notebooks are able to run command line executable that lives on a mounted Google Drive (!!!!)
+As it turns out, Google Colab notebooks are able to run command line executable that lives on a mounted Google Drive (!!!!). 
 
-Therefore, the Synth executables (downloaded 2022-07-09) are in the folder `01-Synth-calculations/Synth-codes`. The colab notebook [01-Synth calculations]() FIX LINK runs `s3div.Linux` in a loop over the stars in Part 1, using the information in the spreadsheet. 
+Therefore, the Synth executables (downloaded 2022-07-09) are in the folder `01-Synth-calculations/Synth-codes`. The notebook [01-Synth calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Synth_calculations.ipynb) runs `s3div.Linux` in a loop over the stars in Part 1, using the information in the spreadsheet. 
 
 The output files (one per star in the sample) are in `01-Synth-calculations/Synth-diskint-spectra` folder of the Shared Drive. 
 
+>NOTE: We are now working directly from the github. All outputs are still on the shared google drive.
+
 ## 4. Radvel shift and noise
 
-The next step is the apply a radial velocity correction (for each observation) and add statistical noise. The colab notebook [02-Synth_calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Synth_calculations.ipynb) does this in Part 2. 
+The next step is the apply a radial velocity correction (for each observation) and add statistical noise. The notebook [01-Synth_calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/01-Synth_calculations.ipynb) does this in Part 2. 
 
 The procedure is as follow: 
 
 1. Read in the original spectrum for an observation
-2. Read in the rotationally broadened model spectrum that has been convolved with the instrument resolution by `s3div` already. WARNING: check the R value for the HARPS observation and modify the code accordingly?
-3. Shift the model by the appropriate radial velocity for that observation (`VradCorrected` in the spreadsheet).
+2. Read in the rotationally broadened model spectrum that has been convolved with the instrument resolution by `s3div` already. 
+>WARNING: check the R value for the HARPS observation and modify the code accordingly?
+3. Shift the model by the appropriate radial velocity for that observation (`VradCorrected` in the `observations` spreadsheet).
 4. Split the observation into its orders (so this is assuming that the spectrum's orders have not been merged. If using a code that merges the order, then there should be an option to do this procedure in one swoop, instead of order by order. 
 5. For each order, do the folloowing:
 	* a. Interpolate the shifted model spectrum to the wavelength grid of the observed spectrum

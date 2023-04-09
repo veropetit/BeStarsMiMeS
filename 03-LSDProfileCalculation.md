@@ -2,7 +2,7 @@
 
 Previous page: [02-LSDMaskCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-LSDMaskCalculation.md)
 
-The LSD profiles are calculated in Colab notebook [03-LSD-calculations/03-LSD_profiles]()FIX LINK
+The LSD profiles are calculated in Colab notebook [03-LSD-calculations/03-LSD_profiles](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSD-calculations/03-LSDprofiles.ipynb)
 
 We make use of the python [LSDpy](https://github.com/folsomcp/LSDpy). The option are as follow:
 
