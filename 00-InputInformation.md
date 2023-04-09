@@ -6,17 +6,15 @@ The GoogleSpreadsheet in the SharedDrive > BeStars Notebooks > [00-InputInformat
 
 
 * `Stars` List of all the stars in the sample with star-dependant information (e.g. vsini, Teff, etc)
+* `WellBehavedStars` Subset of `Stars` containing information on stars with little to no visible emission.
 * `Observations` List of all the observation in the sample, with observation-dependant information (e.g. filename, vrad, etc) 
 * `ListOfModels` List of all the unique synthetic model used. 
 
 
 
 The Colab Notebook [00-InputInformation](https://github.com/veropetit/BeStarsMiMeS/blob/master/00-InputInformation.ipynb) has some demonstration of
-* how we mount the Shared Drive to Colab, 
-* how we clone e.g. the [specpolflow](https://github.com/folsomcp/specpolFlow) python tools to use in the notebook
-* how we load the 00-Information spreadsheet into a Panda Dataframe and various ways to manipulate Pandata dataframes. 
-
-> NOTE: the notebook could use a bit of cleaning. 
+* how we access a spreadsheet using pandas
+* how we loop over all stars, all observations, and all observations of a star 
 
 
 ## Gathering the data from the MiMeS server. 
@@ -47,7 +45,7 @@ The script get_symlink_info.py does two things:
 1. it creates a new file per star in the `input_info` folder named `star_symlink.text` that saves the location the symbolic links points to, for record keeping. 
 2. it copies the symlinks to the folder `BeStars/norm_spectra` in Vero's home account, and renames then according to the nomenclature used by Asif for his LSD profiles (star_1.s, star_2.s, etc). 
 
-Then, all of the normalized spectra are easily accessible from a single directory. Futhermore, because scp follow the symbolic link, I copied all of the normalized spectra with that naming scheme to my group's cluster (might be a bit big to host on the Google Drive for working in Colab -- I will upload the spectra for the first 3 stars on the list to be able to test the codes in colab, then we can run scripts directly on the server instead?)
+Then, all of the normalized spectra are easily accessible from a single directory. Futhermore, because scp follow the symbolic link, I copied all of the normalized spectra with that naming scheme to my group's cluster and the shared google drive.
 
 ```python
 import os
