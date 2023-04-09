@@ -2,11 +2,11 @@
 
 Previous Page: [03-LSDProfileCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md)
 
-The longitudinal magnetic field strengths are calculated in the Colab notebook [04-Bz-calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/04-Bz-calculations/04-Bz-calculations.ipynb)
+The longitudinal magnetic field strengths are calculated in the notebook [04-Bz-calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/04-Bz-calculations/04-Bz-calculations.ipynb)
 
-We make use of [specpolFlow](https://github.com/folsomcp/specpolFlow) and its Bz.py function. The unchanged parameters are as follows:
+We make use of [specpolFlow](https://github.com/folsomcp/specpolFlow) and its Bz.py function. The parameters are as follows:
 
-* cog = I
+* cog = vrad
 * norm = auto
 * lambda0 = 500nm
 * geff = 1.2
@@ -14,6 +14,8 @@ We make use of [specpolFlow](https://github.com/folsomcp/specpolFlow) and its Bz
 * velrange = vrad $\pm$ 1.5vsini
 
 The code was then ran for every star and for the various models described in [03-LSDProfileCalculation](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md)
+
+The outputs are saved as `.csv` files in the `04-Bz-calculations` with the format `model.csv`
  
 
 Next page: [10-WhatDoTheSpectraLookLike.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/10-WhatDoTheSpectraLookLike.md)
