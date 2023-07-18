@@ -2,7 +2,7 @@
 
 Previous page: [02-LSDMaskCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-LSDMaskCalculation.md)
 
-The LSD profiles are calculated in Colab notebook [03-LSD-calculations/03-LSD_profiles](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSD-calculations/03-LSDprofiles.ipynb)
+The LSD profiles are calculated in notebook [03-LSD-calculations/03-LSD_profiles](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSD-calculations/03-LSDprofiles.ipynb)
 
 We make use of the python [LSDpy](https://github.com/folsomcp/LSDpy). The option are as follow:
 
@@ -38,6 +38,6 @@ We calculate different sets of LSD profiles, with different combination of spect
 | Synth-hybrid-spectra | MaskCleanedAsifTweak | hybrid\_CleanAsifTweak+tellClean |
 | NormalizedSpectra | MaskCleanedAsifTweak | normalized\_CleanAsifTweak+tellClean |
 
-There are PDF files (named after the directory in the last column above) in the `LSD` directory that corresponds to each set of LSD profiles.
+There are PDF files (named after the directory in the last column above) in the `UpdatedFiles/03-LSD-calculations` folder.
 
 Next page: [04-LongitudinalFieldCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/04-LongitudinalFieldCalculation.md)
