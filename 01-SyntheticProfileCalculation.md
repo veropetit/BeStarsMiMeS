@@ -14,7 +14,7 @@ These temperatures/gravities correspond to the range of observed stellar paramet
 
 At this moment I can’t recall where those parameters came from. (GAW: Be_2019/WORKING/VALD)
 
-The line lists are in the `00-InputMaterial/VALD-ShortList-AtmModels` folder of the Shared Google Drive. They are in the format `ap00k2_T-----G--.lst`
+The line lists are in the `UpdatedFiles/00-InputMaterial/VALD-ShortList-AtmModels` folder of the Shared Google Drive. They are in the format `ap00k2_T-----G--.lst`
  
 
 ## 2. Compute the local synthetic spectra
@@ -44,7 +44,7 @@ synth3.Darwin_Intel ap00k2_T-----G--.lst  T-----G--.mout
 
 Gregg did this locally on his machine.
 
-The output files are in the `00-InputMaterial/Synth-local-spectra` folder of the Shared Google Drive. 
+The output files are in the `UpdatedFiles/00-InputMaterial/Synth-local-spectra` folder of the Shared Google Drive. 
 
 
 ## 3. Compute the disk-integrated spectra (with rotational broadening)
@@ -69,11 +69,11 @@ s3div  T15000G40.mout hd6226_1.dsk 120.00 2.0 167000 65000
 
 As it turns out, Google Colab notebooks are able to run command line executable that lives on a mounted Google Drive (!!!!). 
 
-Therefore, the Synth executables (downloaded 2022-07-09) are in the folder `01-Synth-calculations/Synth-codes`. The notebook [01-Synth calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Synth_calculations.ipynb) runs `s3div.Linux` in a loop over the stars in Part 1, using the information in the spreadsheet. 
+Therefore, the Synth executables (downloaded 2022-07-09) are in the folder `UpdatedFiles/01-Synth-calculations/Synth-codes`. The notebook [01-Synth calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Synth_calculations.ipynb) runs `s3div.Linux` in a loop over the stars in Part 1, using the information in the spreadsheet. 
 
 The output files (one per star in the sample) are in `01-Synth-calculations/Synth-diskint-spectra` folder of the Shared Drive. 
 
->NOTE: We are now working directly from the github. All outputs are still on the shared google drive.
+>NOTE: We are now working directly from the github. All outputs are on the shared google drive and are accessed using google file stream.
 
 ## 4. Radvel shift and noise
 
@@ -92,7 +92,7 @@ The procedure is as follow:
 	* c. Replace the observation.specI with the model (but keep all the other columns the same -- this way there is no need to stitch together the LSD profiles after the fact.
 6. Splice the orders back together and save the resulting hybrid spectra in .s format.
 
-The resulting hybrid spectra are located in the folder `01-Synth-calculations/Synth-hybrid-spectra` folder in the Shared Google Drive. 
+The resulting hybrid spectra are located in the folder `UpdatedFiles/01-Synth-calculations/Synth-hybrid-spectra` folder in the Shared Google Drive. 
 
 Now, various masks (including Asif's cleaned masks) can be used directly on these spectra, to directly get hybrid LSD profiles. 
 

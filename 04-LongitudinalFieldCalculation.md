@@ -15,7 +15,9 @@ We make use of [specpolFlow](https://github.com/folsomcp/specpolFlow) and its Bz
 
 The code was then ran for every star and for the various models described in [03-LSDProfileCalculation](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md)
 
-The outputs are saved as `.csv` files in the `04-Bz-calculations` with the format `model.csv`
+The outputs are saved as `.csv` files in `UpdatedFiles/04-Bz-calculations` with the format `{model}.csv`
+
+
  
 
-Next page: [10-WhatDoTheSpectraLookLike.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/10-WhatDoTheSpectraLookLike.md)
+Next page: [05-RavenSetup.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/05-RavenSetup.md)

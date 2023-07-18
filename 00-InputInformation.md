@@ -12,7 +12,7 @@ The GoogleSpreadsheet in the SharedDrive > BeStars Notebooks > [00-InputInformat
 
 
 
-The Colab Notebook [00-InputInformation](https://github.com/veropetit/BeStarsMiMeS/blob/master/00-InputInformation.ipynb) has some demonstration of
+The notebook [00-InputInformation](https://github.com/veropetit/BeStarsMiMeS/blob/master/00-InputInformation.ipynb) has some demonstration of
 * how we access a spreadsheet using pandas
 * how we loop over all stars, all observations, and all observations of a star 
 
