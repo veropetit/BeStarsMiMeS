@@ -4,8 +4,8 @@ Previous: [11-MaskComparison.md](https://github.com/veropetit/BeStarsMiMeS/blob/
 
 The `12-LSDComparisons.ipynb` is a notebook that creates a PDF that overplots our hybrid model with 0.02 line depth mask (labeled `fullMask`) with a hybrid model using Asif's clean and Asif's clean with tweak, and the observed data with Asif's clean and Asif's clean with tweak masks.
 
-The 12-StatisticsCalculation is a notebook that calculated the SNR ratios of the LSD profiles, number of masks, and create graphs
-> TODO need to fix the paths are re-run. 
+The 12-StatisticsCalculation is a notebook that calculated the SNR ratios of the LSD profiles.
+> TODO code broken
 
 ## Hybrid/Spectra with Depth0.02/AsifCleanTweak/AsifClean masks. 
 
