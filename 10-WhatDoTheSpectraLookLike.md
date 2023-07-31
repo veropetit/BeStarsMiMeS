@@ -11,7 +11,7 @@ The notebook [10-NormalizedSpectra](https://github.com/veropetit/BeStarsMiMeS/bl
 It also zooms on the CII 426 nm line profile and the HeI 402 nm line profile, and makes a plot of each that is corrected for the radial velocity listed for that observation in the 00-Information spreadsheet (`vradCorrected` column), and adds two vertical lines at the vsini (`vsini-estimate` column) listed in the spreadsheet. 
 
 
-In the main Shared Drive, there is a Google Slides document called [Report on the spectra and model comparison](https://docs.google.com/presentation/d/1lHtzSIiz-eaCwGxALbdUbKNwxVJCBCuztwmTjRraakA/edit?usp=sharing). In this report, we have recorded our first analysis of the spectra. **Note:** NEEDS UPDATING 
+In the main Shared Drive, there is a Google Slides document called [Report on the spectra and model comparison](https://docs.google.com/presentation/d/1lHtzSIiz-eaCwGxALbdUbKNwxVJCBCuztwmTjRraakA/edit?usp=sharing). In this report, we have recorded our first analysis of the spectra.
 
 1. We have identifed by eye the best 5 stars that have 'well-behaved' spectra (no emission, visible and symmetric spectral lines). 
 
@@ -40,8 +40,6 @@ In the [Report on the spectra and model comparison](https://docs.google.com/pres
 2. The noise level of the synthetic model did not seem to match that of the observation itself
 
 	> We need to cycle back to this and make appropriate modification to the spreadsheet, with a record of the change in the spreadsheet and the slides. 
-
-**Note:** The above section should be redone
 	
 ## A note on binarity:
 
@@ -68,10 +66,16 @@ By observing TESS observations of our Be stars, we can identify obvious binaries
 
 Additionally there are a few other less obvious binaries that are flagged due to regular periodic dips or sinusoidal variation. Some of these stars may just be pulsators rather than binaries which is why looking at the spectra might help indentify if it is a binary,
 
-Finally there is one star that is an obvious non-Be star due to three observed stellar flares that typically occur on low mass stars. The literature also indicates that it is a HgMn star.
+[Labadie-Bartz J. et al. 2022](https://iopscience.iop.org/article/10.3847/1538-3881/ac5abd#ajac5abdapp3) has some notes on a handful of stars in our sample that are summarized in the table below. 
 
-> @Patrick: wanna add something here about the comparison between our list of Be and Jonathan's Be star TESS paper? Your results and notes are in a separate spreadsheet, right? **Do this**
-
+| HD | TIC   | Labadie-Bartz J. et al. 2022 Notes | 
+| ------- | ------- | ------------------ |
+| 76838 | 30562668 | Firmly Nonclassical, rejected from sample, Embedded in a nubula |
+| 221507 | 224244458 | Firmly Nonclassical, rejected from sample. HgMnSi star |
+| 52918 | 269087549 | Possible Nonclassical, rejected from sample | 
+| 50820 | 282808223 | Possible Nonclassical, kept in sample, variable emission |
+| 110335 | 405520863 | Possible Nonclassical, kept in sample, constant Halpha with exactly the same profile between 2014 and 2015 |
+| 58978 | 139385056 | Be star of interest, Be+sdO binary |
 
 ---
 Next page: [11-MaskComparison.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/11-MaskComparison.md)
