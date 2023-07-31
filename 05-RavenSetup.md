@@ -11,10 +11,10 @@ The `dataPackets` require the following information, all of which are input into
 * obs_names - the names of the observations (string)
 * vrad - list of the radial velocity of each observation (in km/s)
 * Ic - list of continuum normalization values
-* wint_data - a list of the intensity weigth used to calculate the LSD profiles used
-* wpol_data - a list of the polarization weigth used to calculate the LSD profiles used
-* wint_rav - the unique intensity weigth that will be used to scale the LSD profile for pyRaven
-* wpol_rav - the unique polarization weigth that will be used to scale the LSD profile for pyRaven
+* wint_data - a list of the intensity weight used to calculate the LSD profiles used
+* wpol_data - a list of the polarization weight used to calculate the LSD profiles used
+* wint_rav - the unique intensity weight that will be used to scale the LSD profile for pyRaven
+* wpol_rav - the unique polarization weight that will be used to scale the LSD profile for pyRaven
 * fitrange - size of the area to be used in the fit (just the line, no continuum) (float, in km/s)
 * vsini - the vsini of the star (float, in km/s)
 * original - list of lsd profiles for all of the observation
@@ -23,11 +23,11 @@ The `dataPackets` require the following information, all of which are input into
 
 The packet then automatically creates two other lsd objects for a total of 3 objects. 
 * original -  the LSDprof object containing the original LSD profiles (passed to the function at initialization)
-* scaled - the LSDprof object containing the LSD profiles that have been corrected for radial velocity, normalized to the continuum, and re-scaled to a common LSD weigth. This calculation is done during initialization, using the meta information provided
+* scaled - the LSDprof object containing the LSD profiles that have been corrected for radial velocity, normalized to the continuum, and re-scaled to a common LSD weight. This calculation is done during initialization, using the meta information provided
 * cutfit - the re-scaled LSD profiles that have been cut to only contain the velocity region to be fitted by pyRaven (for ease of computation). This calculation is done during initialization, using the meta information provided.
 
 The notebook then writes the `dataPackets` to `.h5` files for input into pyRaven later on. 
 
-**Note:** Add bit about the models used and output locations. Waiting on completion. 
+Currently (07/31/2023), the normalized and hybrid models with 0.02 depth have both been completed. The output `.h5` files are saved in `UpdatedFiles/05-RavenSetup/{model}`. Pdfs with plots of the three cuts have also been created for the two models and are saved in `UpdatedFiles/05-RavenSetup` as `05-{model}_DataPacket.pdf` where `{model}` is the respective model
 
 Next page: [10-WhatDoTheSpectraLookLike.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/10-WhatDoTheSpectraLookLike.md)

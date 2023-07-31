@@ -12,7 +12,7 @@ Adopted 2 km/s microturbulence
 
 These temperatures/gravities correspond to the range of observed stellar parameters. 
 
-At this moment I can’t recall where those parameters came from. (GAW: Be_2019/WORKING/VALD)
+At this moment I can’t recall where those parameters came from. (GAW: Be_2019/WORKING/VALD) - Vero
 
 The line lists are in the `UpdatedFiles/00-InputMaterial/VALD-ShortList-AtmModels` folder of the Shared Google Drive. They are in the format `ap00k2_T-----G--.lst`
  
@@ -49,7 +49,7 @@ The output files are in the `UpdatedFiles/00-InputMaterial/Synth-local-spectra` 
 
 ## 3. Compute the disk-integrated spectra (with rotational broadening)
 
-This is done in the 01-Synth-calculation folder. 
+This is done in the `UpdatedFiles/01-Synth-calculation` folder. 
 
 For each observed star, we compute a disk-integrated spectrum using Oleg’s `s3div` incorporating the star’s observed vsini. 
 
@@ -71,11 +71,11 @@ As it turns out, Google Colab notebooks are able to run command line executable 
 
 Therefore, the Synth executables (downloaded 2022-07-09) are in the folder `UpdatedFiles/01-Synth-calculations/Synth-codes`. The notebook [01-Synth calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Synth_calculations.ipynb) runs `s3div.Linux` in a loop over the stars in Part 1, using the information in the spreadsheet. 
 
-The output files (one per star in the sample) are in `01-Synth-calculations/Synth-diskint-spectra` folder of the Shared Drive. 
+The output files (one per star in the sample) are in `UpdatedFiles/01-Synth-calculations/Synth-diskint-spectra` folder of the Shared Drive. 
 
 >NOTE: We are now working directly from the github. All outputs are on the shared google drive and are accessed using google file stream.
 
-## 4. Radvel shift and noise
+## 4. Radial shift and noise
 
 The next step is the apply a radial velocity correction (for each observation) and add statistical noise. The notebook [01-Synth_calculations](https://github.com/veropetit/BeStarsMiMeS/blob/master/01-Synth_calculations.ipynb) does this in Part 2. 
 

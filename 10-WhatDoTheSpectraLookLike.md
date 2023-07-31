@@ -6,9 +6,9 @@ In the folder `10-Spectra-Data-vs-hybrid-plots and Halpha and TESS`, there are a
 
 ## Look at the spectra and check the accuracy of vsini
 
-The notebook [10-NormalizedSpectra](https://github.com/veropetit/BeStarsMiMeS/blob/master/10-Spectra-Data-vs-hybrid-plots%20and%20Halpha%20and%20TESS/10-Normalized-spectra.ipynb) Part 1 makes a PDF called [10-NormalizedSpectra_CII_dataonly.pdf](https://drive.google.com/open?id=1ufYQ_YxMVwFFKqBY_OXgDtD-tZrLkXJg&usp=drive_fs)FIX LINK with graphs of a portion of the first observation for each star between 400 and 435 nm. 
+The notebook [10-NormalizedSpectra](https://github.com/veropetit/BeStarsMiMeS/blob/master/10-Spectra-Data-vs-hybrid-plots%20and%20Halpha%20and%20TESS/10-Normalized-spectra.ipynb) Part 1 makes a PDF called [NormalizedSpectra_CII_dataonly.pdf](https://drive.google.com/file/d/1umft-pxUyWMxOcuqlPwVOb6XcZtFbo39/view?usp=sharing) with graphs of a portion of the first observation for each star between 400 and 435 nm. 
 
-It also zooms on the CII 426 nm line profile and the He1 402 nm line profile, and makes a plot of each that is corrected for the radial velocity listed for that observation in the 00-Information spreadsheet (`vradCorrected` column), and adds two vertical lines at the vsini (`vsini-estimate` column) listed in the spreadsheet. 
+It also zooms on the CII 426 nm line profile and the HeI 402 nm line profile, and makes a plot of each that is corrected for the radial velocity listed for that observation in the 00-Information spreadsheet (`vradCorrected` column), and adds two vertical lines at the vsini (`vsini-estimate` column) listed in the spreadsheet. 
 
 
 In the main Shared Drive, there is a Google Slides document called [Report on the spectra and model comparison](https://docs.google.com/presentation/d/1lHtzSIiz-eaCwGxALbdUbKNwxVJCBCuztwmTjRraakA/edit?usp=sharing). In this report, we have recorded our first analysis of the spectra. **Note:** NEEDS UPDATING 
@@ -28,11 +28,11 @@ In the main Shared Drive, there is a Google Slides document called [Report on th
 
 3. We have also identified stars for which the vsini we have listed seems to be wrong. 
 
-	> Patrick has reestimated the vsini by eye and the results have been recorded in the `vsini-estimate` column. Stars with `very bad` listed could not be estimated and their vsini will remain `adopted-vsini`. The results are shown in the [vsinicorrections.pdf]()FIX LINK
+	> Patrick has reestimated the vsini by eye and the results have been recorded in the `vsini-estimate` column. Stars with `very bad` listed could not be estimated and their vsini will remain `adopted-vsini`. The results are shown in the [vsinicorrections.pdf](https://drive.google.com/file/d/1-8hWHfCDbZbzotqSyBnnhvNA7b4e7DVU/view?usp=sharing)
 	
 ## Look at the comparison between the observation and the computed noisy synthetic spectra. 
 
-The notebook [10-NormalizedSpectra](https://github.com/veropetit/BeStarsMiMeS/blob/master/10-Spectra-Data-vs-hybrid-plots%20and%20Halpha%20and%20TESS/10-Normalized-spectra.ipynb) Part 2 makes a PDF called [NormalizedSpecta_CII_DataVSynth.pdf](https://drive.google.com/file/d/1VhZMLk1IcdSYZOmOP7tYBC5F3YuT4-QH/view?usp=sharing)FIX LINK with the same graphs as above, but with the noisy synth model spectrum overplotted. 
+The notebook [10-NormalizedSpectra](https://github.com/veropetit/BeStarsMiMeS/blob/master/10-Spectra-Data-vs-hybrid-plots%20and%20Halpha%20and%20TESS/10-Normalized-spectra.ipynb) Part 2 makes a PDF called [NormalizedSpecta_CII_DataVSynth.pdf](https://drive.google.com/file/d/1unQ_iq1EzPsgkd5N4Zg21b8zWVC9wurE/view?usp=sharing) with the same graphs as above, but with the noisy synth model spectrum overplotted. 
 
 In the [Report on the spectra and model comparison](https://docs.google.com/presentation/d/1lHtzSIiz-eaCwGxALbdUbKNwxVJCBCuztwmTjRraakA/edit?usp=sharing) document, we also identify cases where:
 
@@ -51,7 +51,7 @@ See also below for binarity indication in the TESS lightcurves.
 	
 ## The status of the Be disk during the observations. 
 
-In `UpdatedFiles/10-Spectra-Data-vs-hybrid-plots and Halpha and TESS/10-Normalized-spectra.ipynb`, we make graphs of the Halpha line profiles of each stars, overplotted with our synthetic model. The PDF is called [NormalizedSpectra_Halpha_dataonly.pdf]()FIX LINK. 
+In `UpdatedFiles/10-Spectra-Data-vs-hybrid-plots and Halpha and TESS/10-Normalized-spectra.ipynb`, we make graphs of the Halpha line profiles of each stars, overplotted with our synthetic model. The PDF is called [NormalizedSpectra_Halpha_dataonly.pdf](https://drive.google.com/file/d/1untISEcdpwD9ll4wgdN-yDPajA3Zij9F/view?usp=drive_link). 
 
 The type of emission for each star is noted in the 00-Information spreadsheet, in the column `Halpha shape`. 
 The Google Slides [HalphaCharacterization](https://docs.google.com/presentation/d/1wyPI9kbeioUcQsewTiVvA9LkyhTY_sCioh58Gt9i2cQ/edit?usp=sharing) provides a key and typical profiles images. 
@@ -62,7 +62,7 @@ The Google Slides [HalphaCharacterization](https://docs.google.com/presentation/
 
 ## Using the TESS LC to check for potential binaries and to check the Be status of the target. 
 
-The Colab Notebook [TESS Observations]()FIX LINK makes a PDF called [TESS observations.pdf]()FIX LINK. The pdf plots the light curves, periodogram, and zoomed periodogram for each TESS observation with a cadence of 2 minutes or less. 
+The notebook `10-TESS-Observations.ipynb` makes a PDF called [TESS observations.pdf](https://drive.google.com/file/d/1up3vy7V5IXmt5DXdSLCRLO5u9Gc529iJ/view?usp=drive_link)FIX LINK. The pdf plots the light curves, periodogram, and zoomed periodogram for each TESS observation with a cadence of 2 minutes or less. 
 
 By observing TESS observations of our Be stars, we can identify obvious binaries or otherwise strange stars. There are 2 obvious eclipsing binaries in our sample, HD 35411 and HD 76838, which can be identified by their characteristic periodic flux dips at regular intervals. 
 
