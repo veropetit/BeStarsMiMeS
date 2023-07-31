@@ -11,7 +11,6 @@ The 12-StatisticsCalculation is a notebook that calculated the SNR ratios of the
 
 The [12-LSDComparison.pdf](https://drive.google.com/file/d/1-DXXo7vZz0fsg00lRT02WEB7zGAD_YOZ/view?usp=drive_link) PDF shows the comparison between these masks/spectra combinations. 
 
-**UPDATE IMAGES**
 <img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/Comp4_hyb_data_d0.02_ACT-HD189687.png" style="height: 500px"/>
 
 <img src="https://github.com/veropetit/BeStarsMiMeS/blob/master/DocumentationImages/Comp4_hyb_data_d0.02_ACT-HD148184.png" style="height: 500px"/>
