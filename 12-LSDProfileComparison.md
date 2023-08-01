@@ -34,7 +34,7 @@ Well behaved stars
 * 10 of the 16 well behaved stars have a synthetic profile close to the observed profile when using our 0.02 depth mask. 
 * 11 of the 16 well behaved stars have a synthetic profile close to the observed profile when using Asif's mask.
 * 9 of the 16 well behaved stars have a synthetic profile close to the observed profile when using Asif's tweaked mask.
-Using our mask with the synthetic spectra of the well behaved stars we have an accurate fit for just over half the sample. The differences are likely due to our synthetic spectra being incorrect for a few stars. The fit using Asif's mask is nearly the same as for our mask as expected since both mask have the same lines used. 
+Using our mask with the synthetic spectra of the well behaved stars we have an accurate fit for just over half the sample. The fit using Asif's mask is nearly the same as for our mask as expected since both mask have the same lines used. The differences are likely due the synthetic model spectra being incorrect for a few stars.
 
 All stars
 * 39 of the 78 stars have a synthetic profile close to the observed profile when using our 0.02 depth mask. 
