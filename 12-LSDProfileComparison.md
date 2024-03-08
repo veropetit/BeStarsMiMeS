@@ -40,7 +40,7 @@ All stars
 * 39 of the 78 stars have a synthetic profile close to the observed profile when using our 0.02 depth mask. 
 * 51 of the 78 stars have a synthetic profile close to the observed profile when using Asif's mask.
 * 41 of the 78 stars have a synthetic profile close to the observed profile when using Asif's tweaked mask.
-Using our mask with the synthetic spectra we have an accurate fit for about half of the sample. For the other half, the obseved and synthetic spectra don't match, indicating that either the synethic spectra is wrong, or that the observed spectra is strange. For Asif's mask, the fit is slightly better as expected. Since the obseverved profile used in this is also using Asif's mask the lines used are the same which throws out a few cases where the primary difference was emissive lines.
+Using our mask with the synthetic spectra we have an accurate fit for half of the sample. For the other half, the obseved and synthetic spectra don't match, indicating that either the synethic spectra is wrong, or that the observed spectra is strange. For Asif's mask, the fit is slightly better as expected. Since the obseverved profile used in this is also using Asif's mask the lines used are the same which throws out a few cases where the primary difference was emissive lines.
 
 A more in-depth look at each star's LSD comparison is done in the google slide, [LSDComparison](https://docs.google.com/presentation/d/1TpAvASuGnMbtFENl-HNuoDTj6M6Dal8Z1gm45aD-Shk/edit#slide=id.g25dc0458b49_0_509)
 

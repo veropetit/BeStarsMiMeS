@@ -37,6 +37,10 @@ We calculate different sets of LSD profiles, with different combination of spect
 | NormalizedSpectra | MaskCleanedAsif | normalized\_CleanAsif+tellClean |
 | Synth-hybrid-spectra | MaskCleanedAsifTweak | hybrid\_CleanAsifTweak+tellClean |
 | NormalizedSpectra | MaskCleanedAsifTweak | normalized\_CleanAsifTweak+tellClean |
+| Synth-hybrid-spectra | MaskSuperCleanedAsif | hybrid\_SuperCleanAsif+tellClean |
+| NormalizedSpectra | MaskSuperCleanedAsif | normalized\_SuperCleanAsif+tellClean |
+| Synth-hybrid-spectra | MaskSuperCleanedAsifTweak | hybrid\_SuperCleanAsifTweak+tellClean |
+| NormalizedSpectra | MaskSuperCleanedAsifTweak | normalized\_SuperCleanAsifTweak+tellClean |
 
 There are PDF files (named after the directory in the last column above) in the `UpdatedFiles/03-LSD-calculations` folder.
 

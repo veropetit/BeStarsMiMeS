@@ -41,7 +41,7 @@ We therefore identified such regions visually in an ESPaDOnS spectrum.
 
 The wavelength ranges are recoded in the GoogleSpreadsheet [02-ContaminatedregionsWL](https://docs.google.com/spreadsheets/d/19lS0Xg-2ZUs0ps8jZ-JM3pR1YIuC_lWvRMpFAM5VUYI/edit#gid=0)
 
-Additionally, we exclude regions 1000 km/s aroung the Balmer series, as well as regions aroung the Balmer gap for which the normalization is difficult (especialy when using the synthetic spectra -- the continnum is drepressed). We also check the vsini width that will be used when making the LSD profiles, if there would be overlap with the Balmer series we extended the exclusion regions accordingly.
+Additionally, we exclude regions 800+2*vsini km/s around the Balmer series, as well as regions aroung the Balmer gap for which the normalization is difficult (especialy when using the synthetic spectra -- the continnum is drepressed). We also check the vsini width that will be used when making the LSD profiles, if there would be overlap with the Balmer series we extended the exclusion regions accordingly.
 
 The notebook [02-ContaminatedRegionsVisualization](https://github.com/veropetit/BeStarsMiMeS/blob/master/02-Mask-calculations/02-ContaminatedRegionsVisualization.ipynb) provides a visualization of the removed regions. To change the star to be displayed, just change the name and obervation number. 
 
@@ -70,8 +70,9 @@ But just in case, we passed the mask through the same process described in #3 ab
 Furthermore, we noted that the depth of some lines that are used in the mask (the last column of the file mask has a "1" in it) have a depth set to zero (probably coming from the 'tweaking' process?). 
 We filtered the mask to set the last column to 0 in these cases. 
 
-These mask as located in the folder `UpdatedFiles/02-Mask-calculations/MaskCleaning/AsifMaskClean_tellClean/` and `UpdatedFiles/02-Mask-calculations/MaskCleaning/AsifMaskCleanTweak_tellClean/` 
- 
+These mask are located in the folder `UpdatedFiles/02-Mask-calculations/MaskCleaning/AsifMaskClean_tellClean/` and `UpdatedFiles/02-Mask-calculations/MaskCleaning/AsifMaskCleanTweak_tellClean/` 
+
+Additionally, these masks include some lines with depths smaller than 0.02. Another set of masks was created that removes all lines with depths less than 0.02. These masks are located in the folder `UpdatedFiles/02-Mask-calculations/MaskCleaning/AsifMaskSuperClean_tellClean/` and `UpdatedFiles/02-Mask-calculations/MaskCleaning/AsifMaskSuperCleanTweak_tellClean/` 
 ---
 Next page: [03-LSDProfileCalculation.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/03-LSDProfileCalculation.md)
 
