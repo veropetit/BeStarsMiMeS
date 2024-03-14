@@ -44,6 +44,8 @@ Using our mask with the synthetic spectra we have an accurate fit for half of th
 
 A more in-depth look at each star's LSD comparison is done in the google slide, [LSDComparison](https://docs.google.com/presentation/d/1TpAvASuGnMbtFENl-HNuoDTj6M6Dal8Z1gm45aD-Shk/edit#slide=id.g25dc0458b49_0_509)
 
+## He vs Metals Comparions
 
+Part 4 of the notebook also creates a metal only and He only mask for each model and compares them in a `.pdf` titled `HevMetals.pdf`. Additionally, another `.pdf` is created that also includes histograms of the line depths for the full, metal only, and He only mask. This file is `HevMetals+masks.pdf`.
 
 Next: [13-WhatDoTheBzLookLike.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/13-WhatDoTheBzLookLike.md)

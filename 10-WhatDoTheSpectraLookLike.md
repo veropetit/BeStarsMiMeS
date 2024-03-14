@@ -77,5 +77,8 @@ Additionally there are a few other less obvious binaries that are flagged due to
 | 110335 | 405520863 | Possible Nonclassical, kept in sample, constant Halpha with exactly the same profile between 2014 and 2015 |
 | 58978 | 139385056 | Be star of interest, Be+sdO binary |
 
+Jon also made notes on individual stars in the `JonNotes` column of the spreadsheet.
+
+
 ---
 Next page: [11-MaskComparison.md](https://github.com/veropetit/BeStarsMiMeS/blob/master/11-MaskComparison.md)
